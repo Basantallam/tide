@@ -146,9 +146,9 @@ class ClassedAPDataObject:
 		self.objs[class_].add_gt_positives(num_positives)
 
 	def get_mAP(self) -> float:
-          print("hi")
-		#aps = [x.get_ap() for x in self.objs.values() if not x.is_empty()]
-          aps=[1,2,3]
+	  print(self.objs.values())
+	  aps = [x.get_ap() for x in self.objs.values() if not x.is_empty()]
+          #aps=[1,2,3]
           print(type(aps))
           return sum(aps) / (1+len(aps))
 
