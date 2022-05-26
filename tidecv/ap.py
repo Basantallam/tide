@@ -148,6 +148,7 @@ class ClassedAPDataObject:
 	def get_mAP(self) -> float:
 		for x in self.objs.values():
 			print("x: ",x)
+			print(x.is_empty())
 		print("self objs values ",self.objs.values())
 		aps = [x.get_ap() for x in self.objs.values() if not x.is_empty()]
 		#aps=[1,2,3]
