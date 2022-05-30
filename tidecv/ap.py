@@ -156,7 +156,7 @@ class ClassedAPDataObject:
 		print("aps ",aps)
 		print("sum aps",sum(aps))
 		print("len ", len(aps))
-		return sum(aps) / (1+len(aps))
+		return sum(aps) / (len(aps))
 
 
 	def get_gt_positives(self) -> dict:
